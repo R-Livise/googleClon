@@ -1,20 +1,55 @@
-/* {
-    border: solid 1px;
-}*/
-
 body {
     font-family: arial;
-    min-width: 1000px;
+    min-width: 1200px;
+    margin: 0px;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .header {
     width: 100%;
+
 }
 
 .header__container {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    margin: 0px 10px;
+    height: 60px;
 }
+
+.header__container--options {
+
+    margin: auto 10px;
+    display: flex;
+
+}
+
+.header__container--options li {
+    margin: 0px 10px;
+    font-size: 0.8em;
+}
+
+.header__container---perfil {
+    margin-right: 10px;
+}
+
+.header__container---perfil img {
+
+    vertical-align: middle;
+    margin: auto 10px;
+}
+
+.header__perfil--icon {
+    width: 15px;
+}
+
+.header__perfil--avatar {
+    width: 32px;
+    border-radius: 32px;
+}
+
 
 .body {
     min-height: 500px;
@@ -24,7 +59,7 @@ body {
 }
 
 .body__container {
-    width: 500px;
+    width: 580px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,21 +67,21 @@ body {
 }
 
 .body__logo {
-    width: 250px
+    width: 270px
 }
 
 .body__container--form {
 
     justify-content: center;
     width: 100%;
-    margin-top: 20px
+    margin-top: 30px
 }
 
 
 .body__container--input {
     width: 100%;
     height: 40px;
-    border: solid 1px gray;
+    border: solid 1px #DDD;
     display: flex;
     border-radius: 40px;
 
@@ -55,6 +90,9 @@ body {
 .body__container--input img {
     vertical-align: middle;
     margin: 0px 10px;
+    vertical-align: middle;
+    width: 20px;
+    filter: invert(0.4) sepia(1);
 }
 
 .body__container--input input {
@@ -65,7 +103,7 @@ body {
 }
 
 .body__container--sumbit {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
@@ -75,28 +113,62 @@ body {
     padding: 10px;
     border: none;
     color: gray;
-    border-radius: 4px
+    border-radius: 4px;
+    background-color: #F2F2F2;
 }
 
 .body__container--sumbit button:hover {
     margin: 0px 10px;
     color: black;
-    border: solid 1px gray;
+    border: solid 1px #D5D5D5;
 }
 
 .body__container--footer {
     font-size: 0.8em;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
+.footer {
+    width: 100vw;
+    position: absolute;
+    top: calc(100vh - 83px);
+    background-color: #EEE;
 
+}
 
 .footer_container {
+
     display: flex;
     justify-content: space-between;
+    height: 40px;
+    border: solid 1px #DDD;
+    border-bottom: 0px;
+    padding: 0px
 }
 
 .footer_container ul {
+    list-style: none;
     display: flex;
+    margin: 0px 18px;
+    padding: 0px;
 
+    display: flex;
+    margin: 0px 18px;
+    padding: 0px
+}
+
+.footer_container li {
+    margin: auto 12px;
+    padding: 0px;
+}
+
+.footer_container a {
+    font-size: 0.9em;
+    color: #666;
+
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }

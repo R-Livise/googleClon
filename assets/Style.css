@@ -21,28 +21,34 @@ body {
 
 .header__container--options {
 
-    margin: auto 10px;
+    margin-right: 2px;
     display: flex;
 
 }
 
 .header__container--options li {
-    margin: 0px 10px;
+    margin-left: 14px;
     font-size: 0.8em;
 }
 
+.header__container--options a {
+    color: #333;
+    text-decoration: none;
+}
+
 .header__container---perfil {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .header__container---perfil img {
 
     vertical-align: middle;
-    margin: auto 10px;
+    margin-left: 12px;
 }
 
 .header__perfil--icon {
-    width: 15px;
+    width: 28px;
+    filter: invert(0.4) sepia(1);
 }
 
 .header__perfil--avatar {
@@ -128,6 +134,10 @@ body {
     margin-top: 20px;
 }
 
+.body__container--footer a {
+    margin-left: 5px;
+}
+
 .footer {
     width: 100vw;
     position: absolute;
@@ -160,13 +170,20 @@ body {
 .footer_container li {
     margin: auto 12px;
     padding: 0px;
+
+    font-size: 0.9em;
+    color: #666;
 }
 
 .footer_container a {
-    font-size: 0.9em;
     color: #666;
+}
+a{
+    text-decoration:none;
+    }
 
-    text-decoration: none;
+a:hover {
+    text-decoration:underline;
 }
 
 ul {
